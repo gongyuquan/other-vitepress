@@ -1,85 +1,28 @@
-# Markdown Extension Examples
+### 部署网站
 
-This page demonstrates some of the built-in markdown extensions provided by VitePress.
+1. 把项目提交到git上面
+2. 连接服务器
 
-## Syntax Highlighting
+### ssh
 
-VitePress provides Syntax Highlighting powered by [Shiki](https://github.com/shikijs/shiki), with additional features like line-highlighting:
+ssh 账号@公网ip
 
-**Input**
+### Linux命令
+1. 查看目录ls
+2. 切换目录cd
+3. 创建目录 mkdir  
 
-````md
-```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
-}
+yum 跟nodejs的npm 是一样的  yum是linux的包管理工具
+cat 查看文件
+查看隐藏文件 ls -a
+pwd 命令获取路径  /...
+修改配置文件 vim 编辑配置文件 i键编辑  esc推出 :wq推出保存
+nginx 安装完成之后默认放在etc
+nginx -s reload
+
 ```
-````
-
-**Output**
-
-```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
-}
+  yum install git
+  yum install nginx
+  yum install nodejs
+  yum install npm
 ```
-
-## Custom Containers
-
-**Input**
-
-```md
-::: info
-This is an info box.
-:::
-
-::: tip
-This is a tip.
-:::
-
-::: warning
-This is a warning.
-:::
-
-::: danger
-This is a dangerous warning.
-:::
-
-::: details
-This is a details block.
-:::
-```
-
-**Output**
-
-::: info
-This is an info box.
-:::
-
-::: tip
-This is a tip.
-:::
-
-::: warning
-This is a warning.
-:::
-
-::: danger
-This is a dangerous warning.
-:::
-
-::: details
-This is a details block.
-:::
-
-## More
-
-Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown).
